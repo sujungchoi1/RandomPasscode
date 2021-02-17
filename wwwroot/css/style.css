@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(47, 47, 55);
+}
+
+.wrapper {
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.codeBox {
+    border: 2px beige solid;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+
+.wrapper h2 {
+    margin-top: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: rgb(215, 245, 206);
+    padding: 5px 7px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-color: rgb(215, 245, 206);
+    font-weight: bold;
+}
+
