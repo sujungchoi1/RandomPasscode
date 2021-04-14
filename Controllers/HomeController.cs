@@ -25,7 +25,7 @@ namespace RandomPasscode.Controllers
                 strChars[i] = chars[rand.Next(0, chars.Length)];
             }
             
-            string passcode = new string(strChars);
+            string passcode = new string(strChars); //.ToString() doesn't work
             ViewBag.Passcode = passcode;
 
             // to keep track of passcode count:
@@ -42,6 +42,13 @@ namespace RandomPasscode.Controllers
             }
 
             return View("Index");
+        }
+
+        [HttpGet("reset")]
+        public IActionResult Reset()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
         }
     }
 }
